@@ -2,29 +2,29 @@
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto/');
-    src: local('Roboto Bold'), local('Roboto-Bold'),
+    src: local('../fonts/Robot/Roboto Bold'), local('../fonts/Robot/Roboto-Bold'),
         url('../fonts/Roboto/?#iefix') format('embedded-opentype'),
         url('../fonts/Roboto/Roboto-Bold.woff') format('woff'),
         url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto/Roboto-Regular.eot');
-    src: local('Roboto'), local('Roboto-Regular'),
+    src: local('../fonts/Robot/Roboto'), local('../fonts/Robot/Roboto-Regular'),
         url('../fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
         url('../fonts/Roboto/Roboto-Regular.woff') format('woff'),
         url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto/Roboto-Light.eot');
-    src: local('Roboto Light'), local('Roboto-Light'),
+    src: local('../fonts/Robot/Roboto Light'), local('../fonts/Robot/Roboto-Light'),
         url('../fonts/Roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'),
         url('../fonts/Roboto/Roboto-Light.woff') format('woff'),
         url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
@@ -37,7 +37,7 @@
 @font-face {
     font-family: 'Roboto Condensed';
     src: url('../fonts/RobotoCondensed/RobotoCondensed-Regular.eot');
-    src: local('Roboto Condensed'), local('RobotoCondensed-Regular'),
+    src: local('../fonts/RobotoCondensed/Roboto Condensed'), local('../fonts/RobotoCondensed/RobotoCondensed-Regular'),
         url('../fonts/RobotoCondensed/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
         url('../fonts/RobotoCondensed/RobotoCondensed-Regular.woff') format('woff'),
         url('../fonts/RobotoCondensed/RobotoCondensed-Regular.ttf') format('truetype');
@@ -48,7 +48,7 @@
 @font-face {
     font-family: 'Roboto Condensed';
     src: url('../fonts/RobotoCondensed/RobotoCondensed-Bold.eot');
-    src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'),
+    src: local('../fonts/RobotoCondensed/Roboto Condensed Bold'), local('../fonts/RobotoCondensed/RobotoCondensed-Bold'),
         url('../fonts/RobotoCondensed/') format('embedded-opentype'),
         url('../fonts/RobotoCondensed/RobotoCondensed-Bold.woff') format('woff'),
         url('../fonts/RobotoCondensed/RobotoCondensed-Bold.ttf') format('truetype');
