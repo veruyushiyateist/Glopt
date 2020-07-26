@@ -1,2 +1,2 @@
-*{font-family:Roboto, 'sans-serif'}.promo{min-height:680px;padding:23px 0 81px 0;background:url("../img/bg/promo.png") center center/cover no-repeat}.header__menu{list-style-type:none}
+*{font-family:Roboto, 'sans-serif'}.container{max-width:1140px;margin:0 auto}.button{width:160px;height:45px;background-color:#ec644b;border-radius:100px;color:#ffffff;font-size:12px;font-weight:400;text-transform:uppercase}.promo{min-height:680px;padding:23px 0 81px 0;background:url("../img/bg/promo.png") center center/cover no-repeat}
 /*# sourceMappingURL=style.min.css.map */
