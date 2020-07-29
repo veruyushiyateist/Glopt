@@ -1,9 +1,9 @@
-const gulp        = require('gulp');
-const browserSync = require('browser-sync');
-const sass        = require('gulp-sass');
-const cleanCSS = require('gulp-clean-css');
-const autoprefixer = require('gulp-autoprefixer');
-const rename = require("gulp-rename");
+const gulp          = require('gulp');
+const browserSync   = require('browser-sync');
+const sass          = require('gulp-sass');
+const cleanCSS      = require('gulp-clean-css');
+const autoprefixer  = require('gulp-autoprefixer');
+const rename        = require("gulp-rename");
 
 gulp.task('server', function() {
 
@@ -17,7 +17,7 @@ gulp.task('server', function() {
 });
 
 gulp.task('styles', function() {
-    return gulp.src("src/sass/**/style.sass.+(scss|sass)")
+    return gulp.src("src/sass/style.sass") 
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer())
