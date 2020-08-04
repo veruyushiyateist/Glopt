@@ -1,31 +1,38 @@
 .consultation
     margin-top: 56px
+    padding-bottom: 76px
+
     &__title
         color: #3a3a3a
         font-size: 28px
         font-weight: 400
         text-align: center
+
     &__wrapper
         margin-top: 71px
         padding: 68px 0px 53px 0px 
         min-height: 166px
-        border: 1px solid #898989
+        border: 1px solid rgba(0, 0, 0, 0.21)
         position: relative
+
     &__img
-        background-color: #fff
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 102px
-        height: 102px
-        border: 1px solid $main-color
-        border-radius: 100%
-        padding: 20px
-    &__round
         padding: 10px
         position: absolute
         top: 0
         left: 50%
         transform: translate(-50%, -50%)
         background-color: #fff
+        img
+            width: 102px
+            height: 102px
+            border: 1px solid $main-color
+            border-radius: 100%
+            padding: 20px
 
+    &__button
+        padding: 10px
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translate(-50%, 50%) !important
+        background-color: #fff
