@@ -1,0 +1,162 @@
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__nav
+        z-index: 2
+    &__menu
+        display: flex
+        list-style-type: none
+        margin-top: 10px
+    &__link
+        position: relative
+        color: #ffffff
+        font-size: 15px
+        font-weight: 400
+        &:hover
+            text-decoration: none
+            color: $main-color
+            &::before
+                content: ''
+                position: absolute
+                bottom: -5px
+                height: 2px
+                width: 100%
+                background-color: $main-color
+    &__menu-btn
+        display: none
+    &__item
+        padding: 0px 15px
+        border-right: 1px dotted rgba(0, 0, 0, .4)
+        &:last-child
+            border: none
+            padding-right: 0px
+        &:first-child
+            padding-left: 0px
+    &__wrapper
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__button
+        margin-left: 18px
+    &__question
+        color: #ffffff
+        font-size: 14px
+        font-weight: 300
+        text-align: right
+    &__phone
+        color: #ffffff
+        font-size: 19px
+        font-weight: 700
+
+@media (max-width: 1139px) 
+    .header
+        justify-content: space-around
+        &__item
+            padding: 0 10px 
+        &__link
+            font-size: 14px
+        &__phone
+            font-size: 16px
+@media (max-width: 991px) 
+        .header
+            &__menu
+                margin-left: -25px
+            &__wrapper
+                flex-direction: column-reverse
+                align-items: center
+            &__button
+                margin: 0
+            &__phone
+                text-align: center
+            &__question
+                display: none
+            &__item
+                padding: 0 9px 
+            &__link
+                font-size: 13px
+@media ( max-width: 767px)
+    .header
+        margin-top: 35px
+        position: relative
+        &__phone
+            font-size: 20px
+        &__nav
+            position: fixed
+            top: 0
+            height: 30px
+            width: 100vw
+            background-color: #25333c
+        &__wrapper
+            margin-top: 20px
+        &__menu
+            position: fixed
+            padding: 0
+            margin: 0
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            top: 0
+            left: -100%
+            height: 100%
+            width: 50%
+            background-color: rgba(0, 0, 0, .8)
+            transition: 1s all
+        &__menu_active
+            left: 0
+        &__item
+            margin: 15px 0 
+            border: none
+        &__link
+            font-size: 20px
+        &__menu-btn
+            display: flex
+            position: absolute
+            right: 20px
+            top: 50%
+            transform: translateY(-50%)
+            justify-content: center
+            align-items: center
+            height: 30px
+            width: 30px
+            transition: all .5s ease-in-out
+        &__menu-hamburger 
+            width: 28px
+            height: 2px
+            background-color: #fff
+            border-radius: 5px
+            box-shadow: 0 2px 5px rgba(255, 101, 47, .2)
+            transition: all .5s ease-in-out
+            &::after, &::before
+                content: ''
+                position: absolute
+                width: 28px
+                height: 2px
+                background-color: #fff
+                border-radius: 5px
+                box-shadow: 0 2px 5px rgba(255, 101, 47, .2)
+                transition: all .5s ease-in-out
+            &::after
+                transform: translateY(-6px)
+            &::before
+                transform: translateY(6px)
+        &__menu-btn.open &__menu-hamburger 
+            transform: translateX(-10px)
+            background-color: transparent
+            box-shadow: none
+            &::after
+                transform: rotate(45deg) translate(15px, -15px)
+            &::before
+                transform: rotate(-45deg) translate(15px, 15px) 
+@media (max-width: 575px)
+    .header
+        &__phone
+            font-size: 15px
+        &__menu
+            width: 85%
+
+    
+
+        
+            
+    
