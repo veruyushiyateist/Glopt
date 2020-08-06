@@ -1,4 +1,5 @@
 .footer
+    position: relative
     padding: 24px 0 28px 0
     min-height: 201px
     background-color: #25333c
@@ -8,8 +9,84 @@
         color: #ffffff
         font-size: 16px
         font-weight: 700
+        width: 600px
+        text-align: left
 
     &__wrapper
         display: flex
         align-items: center
 
+    hr
+        margin-top: 26px
+        height: 1px
+        opacity: 0.3
+        border-bottom: 0px
+
+    &__links
+        margin-top: 20px
+        align-items: center
+        display: flex
+        justify-content: space-between
+    
+    &__scratch
+        opacity: 0.6
+        color: #ffffff
+        font-size: 13px
+        font-weight: 300
+
+    &__policy
+        margin-right: 10vw
+        color: $main-color
+        font-size: 13px
+        font-weight: 300
+        text-decoration: underline
+        a
+            color: $main-color
+            text-decoration: underline
+
+    &__links-logo
+        width: 140px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__links-name
+        opacity: 0.6
+        color: #ffffff
+        font-size: 13px
+        font-weight: 300
+    
+    &__links-img
+        width: 30px
+        height: 32px
+        opacity: 0.78
+
+@media (max-width: 757px)
+    .footer
+        &__descr
+            width: auto
+            position: absolute
+            top: -30px
+            margin: 0 auto
+        
+        &__links
+            justify-content: space-around
+        
+        &__policy
+            margin: 0
+
+
+@media (max-width: 575px)
+    .footer
+        &__descr
+            font-size: 12px
+
+        &__links
+            flex-direction: column
+
+        &__scratch
+            margin-bottom: 10px
+
+        &__policy
+            margin-bottom: 10px
+    

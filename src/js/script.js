@@ -1,11 +1,3 @@
-$(document).ready(function(){
-    $('.feed__carousel').slick({
-        prevArrow: '<img class="slick-next" src="icons/slider/next.png">',
-        nextArrow: '<img class="slick-prev" src="icons/slider/prev.png">'
-      });
-});
-
-
 const menuBtn = document.querySelector('.header__menu-btn');
 const menu = document.querySelector('.header__menu');
 let menuOpen = false;
@@ -20,4 +12,31 @@ menuBtn.addEventListener('click', () => {
         menu.classList.remove('header__menu_active');
         menuOpen = false;
     }
+});
+
+const mySwiper = new Swiper('.swiper-container', {
+    loop: true,
+    // spaceBetween: 45,
+    navigation: {
+        nextEl: '.swiper-button-prev',
+        prevEl: '.swiper-button-next',
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          centeredSlides: false
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 1,
+          centeredSlides: false
+        },
+        // when window width is >= 640px
+        992: {
+          slidesPerView: 3,
+          centeredSlides: true
+        }
+
+      }
 });

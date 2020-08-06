@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link type="text/css" rel="stylesheet" href="css/fonts.css">
     <link type="text/css" rel="stylesheet" href="css/style.min.css">
     <title>Glopt</title>
@@ -284,22 +285,41 @@
         <h2 class="title">отзывы наших клиентов</h2>
         <div class="line"></div>
         <div class="subtitle">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</div>
-        <div class="feed__carousel">
-            <div class="feed__item">
-                <img class="feed__img" src="img/reviews/Olga.png" alt="Olga">
-                <div class="feed__name">Анисимова Ольга</div>
-                <div class="feed__descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</div>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="img/reviews/Olga.png" alt="Olga">
+                    <div class="swiper-slide-name">Анисимова Ольга</div>
+                    <div class="swiper-slide-feed">
+                        Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/reviews/feed-2.png" alt="Sergey">
+                    <div class="swiper-slide-name">Сергей Валиев</div>
+                    <div class="swiper-slide-feed">
+                        Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/reviews/feed-3.png" alt="Dmitry">
+                    <div class="swiper-slide-name">Дмитрий Иванов</div>
+                    <div class="swiper-slide-feed">
+                        Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                    </div>
+                </div>
             </div>
-            <div class="feed__item">
-                <img class="feed__img" src="img/reviews/feed-2.png" alt="Dmitry">
-                <div class="feed__name">Дмитрий Иванов</div>
-                <div class="feed__descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</div>
-            </div>
-            <div class="feed__item">
-                <img class="feed__img" src="img/reviews/feed-3.png" alt="Sergey">
-                <div class="feed__name">Сергей Валиев</div>
-                <div class="feed__descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</div>
-            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+        
+            <!-- If we need navigation buttons -->
+            <img src="icons/slider/next.png" class="swiper-button-next"></шь>
+            <img src="icons/slider/prev.png" class="swiper-button-prev"></img>
+        
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
         </div>
     </section>
 
@@ -332,8 +352,8 @@
             <header class="header header__footer">
                 <div class="footer__wrapper">
                     <img src="icons/logo/main/glopt.png" alt="main-logo" class="header__logo header__logo_footer">
-                    <div class="footer__descr">Global Opt - Доставка грузов из Китая в Россию и СНГ</div>
                 </div>
+                <div class="footer__descr">Global Opt - Доставка грузов из Китая в Россию и СНГ</div>
                 <div class="header__wrapper">
                     <div class="header__info">
                         <div class="header__question">Есть вопросы?</div>
@@ -344,12 +364,20 @@
                     </div>
                 </div>
             </header>
+            <hr>
+            <div class="footer__links">
+                <div class="footer__scratch">© 2010 Scratch.com.ua</div>
+                <div class="footer__policy"><a href="#">Политика конфидециальности</a></div>
+                <div class="footer__links-logo">
+                    <div class="footer__links-name">Создание сайта:</div>
+                    <img src="icons/footer/footer.png" alt="footer" class="footer__links-img">
+                </div>
+            </div>
         </div>
     </footer>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

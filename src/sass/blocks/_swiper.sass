@@ -1,0 +1,77 @@
+.swiper
+    &-container
+        position: relative
+        margin: 0 auto
+        margin-top: 31px
+        width: 100%
+    &-slide
+        display: flex
+        align-self: center
+        justify-content: space-around
+        flex-direction: column
+        transform: scale(0.6)
+        opacity: .7
+
+        &-active
+            transform: scale(1)
+            opacity: 1
+
+        img
+            width: 114px
+            height: 114px
+            display: block
+            margin: 0 auto
+
+        &-name
+            margin-top: 19px
+            color: #3a3a3a
+            font-size: 18px
+            font-weight: 700
+            line-height: 22.01px
+            text-align: center
+        
+        &-feed
+            margin-top: 10px
+            font-size: 18px
+            font-weight: 300
+            text-align: center
+        
+    &-button-prev
+        position: absolute
+        top: 21%
+        left: 40vw
+
+    &-button-next
+        position: absolute
+        top: 21%
+        right: 40vw
+
+@media ( max-width: 991px )
+     .swiper
+        &-container
+            width: 75vw !important
+
+        &-button-prev
+            top: 20%
+            left: 20vw
+
+        &-button-next
+            top: 20%
+            right: 20vw
+    
+
+@media (max-width: 575px)
+    .swiper
+        &-container
+            width: 100vw
+
+        &-button-prev
+            top: 13%
+            left: 5vw
+
+        &-button-next
+            top: 13%
+            right: 5vw
+
+
+    
