@@ -1,3 +1,10 @@
+$(document).ready(function(){
+    $('.feed__carousel').slick({
+        prevArrow: '<img class="slick-next" src="icons/slider/next.png">',
+        nextArrow: '<img class="slick-prev" src="icons/slider/prev.png">'
+      });
+});
+
 
 const menuBtn = document.querySelector('.header__menu-btn');
 const menu = document.querySelector('.header__menu');

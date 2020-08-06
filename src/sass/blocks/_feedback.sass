@@ -1,0 +1,91 @@
+.feedback
+    padding: 62px 0 79px 0
+    min-height: 438px
+    background: url('../../img/bg/form.png') center center / cover no-repeat
+    background-attachment: fixed
+
+    &__form
+        min-height: 300px
+        background-color: rgba(255, 255, 255, .7)
+
+    &__wrapper
+        padding: 20px 0
+        background-color: #25333c
+
+    &__title
+        text-align: center
+        color: #ffffff
+        font-size: 19px
+        font-weight: 700
+        text-transform: uppercase 
+    
+    &__subtitle
+        text-align: center
+        color: #ffffff
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+
+    &__form-wrapper
+        padding: 18px 40px 25px 40px
+
+    &__feed-form
+        padding: 18px 0 25px 0
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+
+        textarea
+            display: block
+            margin-top: 8px
+            resize: none
+            width: 813px
+            height: 71px
+            border: 1px solid rgba(0, 0, 0, 0.21)
+            background-color: #ffffff
+            padding-top: 18px
+            padding-left: 25px
+            color: #616467
+            font-size: 13px
+            font-weight: 300
+            border-radius: 10px
+
+        input
+            width: 268px
+            height: 45px
+            border: 1px solid rgba(0, 0, 0, 0.21)
+            background-color: #fff
+            border-radius: 22px
+            color: rgba(16, 16, 16, .7)
+            font-size: 13px
+            font-weight: 300
+            padding: 18px 27px
+
+    &__input
+        margin-top: 18px
+
+@media (max-width: 815px)
+    .feedback
+        
+        &__form
+            width: 90vw
+            margin: 0 auto
+        &__input
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        
+        &__feed-form
+
+            input
+                margin-top: 15px
+                &:first-child
+                    margin-top: 0
+            
+            textarea
+                margin-top: 15px
+                max-width: 268px
+    
+
